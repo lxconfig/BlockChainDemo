@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First DApp Demo</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+<!--    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>-->
+    <script type="text/javascript" src="node_modules/babel-polyfill/dist/polyfill.min.js"></script>
+    <script type="text/javascript" src="web3.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>First DApp Demo</h1>
+    <h2 id="info"> </h2>
+    <label>姓名:</label>
+    <input id="name" type="text">
+    <label>年龄:</label>
+    <input id="age" type="text">
+    <button id="button">更新</button>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript">
+      console.log("web3:" + web3);
+  </script>
+  <script>
+      if(typeof web3 !== "undefined"){
+          web3 = new Web3(web3.currentProvider);
+      }
+      else{
+          web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:2333"));
+      }
+      var infoContract = new web3.eth.Contract([
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"name": "_age",
+				"type": "uint256"
+			}
+		],
+		"name": "SetInfo",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "Get",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+], "0xB768FECd6108b9B7717C1F4B56DC65e7967Cc86F");
+      // var info = infoContract.at('0x1C942344dDfc3464f0fA2692f120A77cb078bF46');
+      infoContract.methods.Get().call(null,function (error, result) {
+          if(!error){
+              $("#info").html(result[0] + "(" + result[1] + "years old)");
+          }
+      });
+      $("#button").click(function () {
+          var name = $('#name').val();
+          var age = $('#age').val();
+          infoContract.methods.SetInfo(name,age).send({from: '0x3248f4c1412e9335cd44893809bd24c101cedb80'}).on("receipt",function (receipt) {
+                  console.log("set ok");
+                  console.log(receipt);
+          })
+      })
+//       var infoContract = web3.eth.contract([
+// 	{
+// 		"constant": false,
+// 		"inputs": [
+// 			{
+// 				"name": "_name",
+// 				"type": "string"
+// 			},
+// 			{
+// 				"name": "_age",
+// 				"type": "uint256"
+// 			}
+// 		],
+// 		"name": "SetInfo",
+// 		"outputs": [],
+// 		"payable": true,
+// 		"stateMutability": "payable",
+// 		"type": "function"
+// 	},
+// 	{
+// 		"constant": true,
+// 		"inputs": [],
+// 		"name": "Get",
+// 		"outputs": [
+// 			{
+// 				"name": "",
+// 				"type": "string"
+// 			},
+// 			{
+// 				"name": "",
+// 				"type": "uint256"
+// 			}
+// 		],
+// 		"payable": false,
+// 		"stateMutability": "view",
+// 		"type": "function"
+// 	}
+// ])
+//       var info = infoContract.at('0xB768FECd6108b9B7717C1F4B56DC65e7967Cc86F');
+//       info.Get(function (error, result) {
+//           if(!error){
+//               $("#info").html(result[0]+' ('+result[1]+' years old)');
+//                     console.log(result);
+//           }
+//       });
+//         $("#button").click(function() {
+//             info.SetInfo($("#name").val(), $("#age").val()).call({from: "0x3248f4c1412e9335cd44893809bd24c101cedb80"});
+//         });
+
+  </script>
+</body>
+</html>
