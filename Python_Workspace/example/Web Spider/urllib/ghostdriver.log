@@ -1,0 +1,14 @@
+[INFO  - 2019-03-04T07:34:11.900Z] GhostDriver - Main - running on port 4178
+[INFO  - 2019-03-04T07:34:11.987Z] Session [e78eba60-3e4f-11e9-ab17-a79015bb1718] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-03-04T07:34:11.987Z] Session [e78eba60-3e4f-11e9-ab17-a79015bb1718] - page.customHeaders:  - {}
+[INFO  - 2019-03-04T07:34:11.987Z] Session [e78eba60-3e4f-11e9-ab17-a79015bb1718] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-03-04T07:34:11.987Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: e78eba60-3e4f-11e9-ab17-a79015bb1718
+[ERROR - 2019-03-04T07:34:16.588Z] Session [e78eba60-3e4f-11e9-ab17-a79015bb1718] - page.onError - msg: TypeError: null is not an object (evaluating 'e.appendChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-04T07:34:16.589Z] Session [e78eba60-3e4f-11e9-ab17-a79015bb1718] - page.onError - stack:
+  t (http://cpro.baidustatic.com/cpro/ui/noexpire/ws/widget/logo_d508a26.js:1)
+  d (http://cpro.baidustatic.com/cpro/ui/noexpire/ws/widget/logo_d508a26.js:1)
+  (anonymous function) (http://pos.baidu.com/s?hei=90&wid=960&di=u2312508&ltu=http%3A%2F%2Fsc.chinaz.com%2Ftupian%2Fbeijingtupian.html&psi=4a516ad3c6e0be32d21bfcc26dd997c5&dis=0&dai=3&dri=0&ps=212x0&pcs=400x300&pss=980x3424&cdo=-1&cfv=0&psr=1920x1080&pis=-1x-1&par=1920x1040&dc=3&cmi=0&cpl=0&cce=true&ccd=32&ant=0&tpr=1551684856034&exps=111000,114011,110011&drs=1&chi=1&col=zh-CN&ari=2&ti=%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E3%80%81%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E5%A4%A7%E5%85%A8%E3%80%81%E6%A1%8C%E9%9D%A2%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E3%80%81%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E7%B4%A0%E6%9D%90_%E7%AB%99%E9%95%BF%E7%B4%A0%E6%9D%90&tlm=1551641146&cja=false&cec=UTF-8&dtm=HTML_POST&tcn=1551684856:883)
+
+  phantomjs://platform/console++.js:263 in error

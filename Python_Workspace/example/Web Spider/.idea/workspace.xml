@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1b6af585-f9b6-4912-80b1-acb0e70d3676" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/1-denglu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10-LoginNuix.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-parse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-zhilian.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-zimoshi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-ajax-get.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-qiutu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-xpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4-ajax-post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4-duanzi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4-jsonpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4-lizhi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5-soup-test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5-taobao.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5-tieba.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6-control_chrome.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6-error.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7-control_phantomjs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7-handler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-daili.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-下拉滚动条.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9-execute_js.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9-login.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baidu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baidu1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bbs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_request_head.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/douban.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/douban.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ghostdriver.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mao.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mao1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phantomjs/Headless_Chrome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phantomjs/baidu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phantomjs/douban.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phantomjs/douban_movie1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phantomjs/douban_movie2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phantomjs/meinv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phantomjs/ssss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phantomjs/tupian1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phantomjs/tupian2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/renren.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/ghostdriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/requests/ghostdriver.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/requests/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/test3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy/yangguang/yangguang/spiders/yg.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy/yangguang/yangguang/spiders/yg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/soup-text.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/taobao.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xpath.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ys.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/发送bilibili弹幕.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/攻城狮.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/段子.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/淘宝1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/淘宝2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/百度搜索信息(get方式).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/程序猿.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/糗图练习.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/练习.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/练习.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Web_Spider$test.coverage" NAME="test Coverage Results" MODIFIED="1556545247844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/requests" />
+    <SUITE FILE_PATH="coverage/Web_Spider$.coverage" NAME="多线程爬虫 Coverage Results" MODIFIED="1557409334859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/requests" />
+    <SUITE FILE_PATH="coverage/Web_Spider$csv_rw.coverage" NAME="csv_rw Coverage Results" MODIFIED="1556620941011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/requests" />
+    <SUITE FILE_PATH="coverage/Web_Spider$DictWriter.coverage" NAME="DictWriter Coverage Results" MODIFIED="1557406766127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csv" />
+    <SUITE FILE_PATH="coverage/Web_Spider$proxies_pool.coverage" NAME="proxies_pool Coverage Results" MODIFIED="1556104143194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/requests" />
+    <SUITE FILE_PATH="coverage/Web_Spider$csv_write.coverage" NAME="csv_write Coverage Results" MODIFIED="1556623292397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csv" />
+    <SUITE FILE_PATH="coverage/Web_Spider$csv_read.coverage" NAME="csv_read Coverage Results" MODIFIED="1557055035529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csv" />
+    <SUITE FILE_PATH="coverage/Web_Spider$tencent_position.coverage" NAME="tencent_position Coverage Results" MODIFIED="1557056312068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/requests" />
+    <SUITE FILE_PATH="coverage/Web_Spider$_pydev_execfile.coverage" NAME="_pydev_execfile Coverage Results" MODIFIED="1557408783939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps" />
+    <SUITE FILE_PATH="coverage/Web_Spider$demo.coverage" NAME="demo Coverage Results" MODIFIED="1554124225744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1638774565">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="22" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="11" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="24" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+          <entry key="Image" value="3" />
+          <entry key="Ini" value="3" />
+          <entry key="JSON" value="2" />
+          <entry key="PLAIN_TEXT" value="89" />
+          <entry key="Profiler Session" value="1" />
+          <entry key="Python" value="130" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="183" />
+          <entry key="Python" value="15940" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csv/csv_write.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="8" selection-start-column="8" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csv/csv_read.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csv/DictWriter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="31" selection-start-line="31" selection-end-line="43" selection-end-column="46" />
+              <folding>
+                <element signature="e#70#80#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requests/多线程爬虫.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+              <folding>
+                <element signature="e#167#183#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requests/poem.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>class=&quot;tablelist</find>
+      <find>DOCTYPE</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="lxconfig &lt;525868229@qq.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/tssss.py" />
+        <option value="$PROJECT_DIR$/ys.py" />
+        <option value="$PROJECT_DIR$/scrapy/tencent/tencent/spiders/hr.py" />
+        <option value="$PROJECT_DIR$/scrapy/douban/douban/pipelines.py" />
+        <option value="$PROJECT_DIR$/scrapy/douban/douban/items.py" />
+        <option value="$PROJECT_DIR$/scrapy/douban/douban/spiders/book.py" />
+        <option value="$PROJECT_DIR$/scrapy/circ/circ/settings.py" />
+        <option value="$PROJECT_DIR$/scrapy/tencent_crawlspider/tencent_crawlspider/settings.py" />
+        <option value="$PROJECT_DIR$/scrapy/tencent_crawlspider/tencent_crawlspider/spiders/e_hr.py" />
+        <option value="$PROJECT_DIR$/scrapy/circ/circ/spiders/cf.py" />
+        <option value="$PROJECT_DIR$/scrapy/login/login/spiders/renren.py" />
+        <option value="$PROJECT_DIR$/scrapy/login/login/spiders/github.py" />
+        <option value="$PROJECT_DIR$/scrapy/login/login/settings.py" />
+        <option value="$PROJECT_DIR$/scrapy/bilibiliCommentAnalysis/bilibiliCommentAnalysis/settings.py" />
+        <option value="$PROJECT_DIR$/scrapy/bilibiliCommentAnalysis/message.txt" />
+        <option value="$PROJECT_DIR$/scrapy/bilibiliCommentAnalysis/comment.txt" />
+        <option value="$PROJECT_DIR$/demo.py" />
+        <option value="$PROJECT_DIR$/scrapy/bilibiliCommentAnalysis/bilibiliCommentAnalysis/pipelines.py" />
+        <option value="$PROJECT_DIR$/scrapy/bilibiliCommentAnalysis/bilibiliCommentAnalysis/spiders/comment.py" />
+        <option value="$PROJECT_DIR$/scrapy/login/login/spiders/github2.py" />
+        <option value="$PROJECT_DIR$/scrapy/jdBook/jdBook/settings.py" />
+        <option value="$PROJECT_DIR$/scrapy/jdBook/jdBook/spiders/jdbook.py" />
+        <option value="$PROJECT_DIR$/scrapy/jdBook/jdBook/spiders/dangdang.py" />
+        <option value="$PROJECT_DIR$/scrapy/amazon/amazon/settings.py" />
+        <option value="$PROJECT_DIR$/scrapy/amazon/amazon/spiders/amazon_book.py" />
+        <option value="$PROJECT_DIR$/requests/proxy.txt" />
+        <option value="$PROJECT_DIR$/requests/proxies_pool.py" />
+        <option value="$PROJECT_DIR$/requests/3-post.py" />
+        <option value="$PROJECT_DIR$/requests/test.py" />
+        <option value="$PROJECT_DIR$/requests/csv_rw.py" />
+        <option value="$PROJECT_DIR$/csv/csv_rw.py" />
+        <option value="$PROJECT_DIR$/csv/csv_reader.py" />
+        <option value="$PROJECT_DIR$/csv/csv_write.py" />
+        <option value="$PROJECT_DIR$/csv/csv_read.py" />
+        <option value="$PROJECT_DIR$/requests/tencent_position.py" />
+        <option value="$PROJECT_DIR$/csv/DictWriter.py" />
+        <option value="$PROJECT_DIR$/requests/poem.csv" />
+        <option value="$PROJECT_DIR$/scrapy/yangguang/yangguang/spiders/yg.py" />
+        <option value="$PROJECT_DIR$/requests/多线程爬虫.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="114" />
+    <option name="y" value="213" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PySingleQuotedDocstringInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Web Spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web Spider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web Spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web Spider" type="462c0819:PsiDirectoryNode" />
+              <item name="requests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web Spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web Spider" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ZUC" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Python37\example\Web Spider\scrapy\bilibiliCommentAnalysis" />
+      <recent name="E:\Python37\example\Web Spider\scrapy\bilibiliCommentAnalysis\bilibiliCommentAnalysis" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.多线程爬虫">
+    <configuration name="多线程爬虫" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Web Spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/requests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/requests/多线程爬虫.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DictWriter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Web Spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/csv" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csv/DictWriter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_pydev_execfile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Web Spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="csv_read" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Web Spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/csv" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csv/csv_read.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tencent_position" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Web Spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/requests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/requests/tencent_position.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.csv_read" />
+      <item itemvalue="Python.DictWriter" />
+      <item itemvalue="Python.tencent_position" />
+      <item itemvalue="Python.多线程爬虫" />
+      <item itemvalue="Python._pydev_execfile" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.多线程爬虫" />
+        <item itemvalue="Python._pydev_execfile" />
+        <item itemvalue="Python.DictWriter" />
+        <item itemvalue="Python.tencent_position" />
+        <item itemvalue="Python.csv_read" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\b\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b6af585-f9b6-4912-80b1-acb0e70d3676" name="Default Changelist" comment="" />
+      <created>1553773165359</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553773165359</updated>
+    </task>
+    <task id="LOCAL-00001" summary="测试上传">
+      <created>1553776005850</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553776005850</updated>
+    </task>
+    <task id="LOCAL-00002" summary="测试上传">
+      <created>1553776446556</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1553776446556</updated>
+    </task>
+    <task id="LOCAL-00003" summary="新增爬取流行标签">
+      <created>1553776973001</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1553776973001</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1.book.py文件修改参数传递，注意浅拷贝和copy模块的使用&#10;2.学习CrawlSpider模块以及rules规则的设定（circ,tencent_crawlspider）">
+      <created>1553867930483</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1553867930483</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1.学习cookie的处理（有三种方式）&#10;2.爬取b站视频的评论，生成词云">
+      <created>1554292692275</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554292692275</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19474249" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49892703" weight="0.3058306" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32893288" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32893288" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50107294" side_tool="true" weight="0.29372936" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32893288" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3299356" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3299356" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17864807" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29372936" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32893288" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32893288" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32893288" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32893288" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3299356" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3299356" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_DETAILS" value="true" />
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="测试上传" />
+    <MESSAGE value="新增爬取流行标签" />
+    <MESSAGE value="1.book.py文件修改参数传递，注意浅拷贝和copy模块的使用&#10;2.学习CrawlSpider模块以及rules规则的设定（circ,tencent_crawlspider）" />
+    <MESSAGE value="1.学习cookie的处理（有三种方式）&#10;2.爬取b站视频的评论，生成词云" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.学习cookie的处理（有三种方式）&#10;2.爬取b站视频的评论，生成词云" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../Lib/site-packages/scrapy_redis/dupefilter.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/login/login/spiders/renren.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/login/login/spiders/github.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="26" selection-start-line="26" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/myspider/myspider/spiders/itcast.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/douban/douban/spiders/book.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/jdBook/jdBook/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/jdBook/jdBook/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/jdBook/jdBook/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/tencent_crawlspider/tencent_crawlspider/spiders/e_hr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/amazon/amazon/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/amazon/amazon/spiders/amazon_book.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/jian.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/code.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urllib/json.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/2-get.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/4-proxy.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urllib/练习.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="111" column="36" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/365yg-test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urllib/4-lizhi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1953" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/proxy.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/tencent/tencent/spiders/hr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/1-Headless_Chrome.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urllib/phantomjs-2.1.1-windows/third-party.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/3-post.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/6-chinaunix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-558" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/test.csv" />
+    <entry file="file://$PROJECT_DIR$/requests/test1.csv" />
+    <entry file="file://$PROJECT_DIR$/requests/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/csv_rw.py" />
+    <entry file="file://$PROJECT_DIR$/requests/proxies_pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urllib/7-control_phantomjs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv/test.csv" />
+    <entry file="file://$PROJECT_DIR$/requests/tencent_position.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv/csv_write.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv/csv_read.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/10-download_video.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/13-muti_threading_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-465" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/bus_route_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="12" selection-start-line="10" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/circ/circ/spiders/cf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="9" column="82" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/jdBook/jdBook/spiders/jdbook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1023">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/jdBook/jdBook/spiders/dangdang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="23" column="92" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urllib/5-tieba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-558">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv/test1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv/DictWriter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="31" selection-start-line="31" selection-end-line="43" selection-end-column="46" />
+          <folding>
+            <element signature="e#70#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/yangguang/yangguang/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy/yangguang/yangguang/spiders/yg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/7-8684bus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1953" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/poem.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requests/多线程爬虫.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="e#167#183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

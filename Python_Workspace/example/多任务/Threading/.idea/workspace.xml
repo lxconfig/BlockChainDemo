@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8478f34e-44c7-4abd-841c-fdf001315064" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../网络编程/udp-tcp/udp_sendto.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/1-denglu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/1-post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/1-request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/10-LoginNuix.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/2-parse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/2-post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/2-zhilian.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/2-zimoshi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/3-ajax-get.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/3-json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/3-qiutu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/3-xpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/4-ajax-post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/4-duanzi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/4-jsonpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/4-lizhi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/5-soup-test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/5-taobao.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/5-tieba.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/6-control_chrome.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/6-error.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/7-control_phantomjs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/7-handler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/8-daili.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/8-下拉滚动条.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/9-execute_js.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/9-login.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/baidu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/baidu1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/bbs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/book.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/c++_1/c++_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/c++_1/c++_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/c++_1/c++_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/c++_1/c++_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/c++_1/c++_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/c_1/c_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/c_1/c_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/create_request_head.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/douban.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/douban.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/exercise_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/ghostdriver.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/ip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/mao.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/mao1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/ChangeLog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/LICENSE.BSD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/bin/phantomjs.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/arguments.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/child_process-examples.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/colorwheel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/countdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/detectsniff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/echoToFile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/features.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/fibo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/hello.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/injectme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/loadspeed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/loadurlwithoutcss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/modernizr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/netlog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/netsniff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/openurlwithproxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/outputEncoding.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/page_events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/pagecallback.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/phantomwebintro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/postjson.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/postserver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/printenv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/printheaderfooter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/printmargins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/rasterize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/render_multi_url.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/responsive-screenshot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/run-jasmine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/run-jasmine2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/run-qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/scandir.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/serverkeepalive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/simpleserver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/sleepsort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/stdin-stdout-stderr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/universe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/unrandomize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/useragent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/version.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/waitfor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/examples/walk_through_frames.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs-2.1.1-windows/third-party.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs/Headless_Chrome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs/baidu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs/douban.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs/douban_movie1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs/douban_movie2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs/meinv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs/ssss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs/tupian1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/phantomjs/tupian2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/photo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/photo2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/proxy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/python_1/python_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/python_1/python_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/python_1/python_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/renren.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/requests/ghostdriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Web Spider/requests/ghostdriver.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/requests/test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/requests/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Web Spider/requests/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/requests/test3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/scrapy/douban/douban/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Web Spider/scrapy/douban/douban/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/scrapy/douban/douban/spiders/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Web Spider/scrapy/douban/douban/spiders/book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/scrapy/test1/scrapy.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/scrapy/test1/test1/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/scrapy/test1/test1/items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/scrapy/test1/test1/middlewares.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/scrapy/test1/test1/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/scrapy/test1/test1/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/scrapy/test1/test1/spiders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/scrapy/test1/test1/spiders/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/scrapy/ts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/scrapy/yangguang/yangguang/spiders/yg.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Web Spider/scrapy/yangguang/yangguang/spiders/yg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/soup-text.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/taobao.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/xpath.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/励志语录/励志.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/发送bilibili弹幕.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/攻城狮.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/段子.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/淘宝1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/淘宝2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/百度搜索信息(get方式).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/程序猿.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/糗图练习.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/练习.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/练习.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic10012_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic10023_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic10038_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic10046_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic10066_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic10186_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic10235_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic10495_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic10509_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic6221_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic6317_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic6484_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic6528_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic6630_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic6678_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic6801_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic6870_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic6924_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic6954_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic7095_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic7104_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic7136_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic7411_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic7607_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic7780_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic7880_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic8086_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic8091_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic8153_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic8212_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic8418_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic8625_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic8631_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9030_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9218_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9293_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9342_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9377_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9438_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9444_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9448_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9474_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9502_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9573_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9606_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9706_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9730_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9779_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9803_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9846_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9870_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/bpic9966_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic124_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic155_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic159_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic179_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic185_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic192_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic198_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic254_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic274_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic287_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic288_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic317_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic320_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic335_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic33_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic382_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic388_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic399_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic407_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic53_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic625_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/hpic68_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/wpic1088_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/wpic1224_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/wpic1233_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/wpic1245_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/wpic1406_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/wpic455_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/wpic491_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/wpic533_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/wpic628_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/wpic653_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/wpic665_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic10858_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic11294_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic11318_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic11409_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic12005_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic12029_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic12219_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic12540_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic12607_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic12755_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic12856_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic13002_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic13301_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic13553_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic13706_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic13906_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic14314_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic14343_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic14477_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic14937_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic14983_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic15056_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic15067_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic15167_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic15323_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic15539_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic15573_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic15635_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic16082_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic16162_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic16211_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic16222_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic16242_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic16525_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/美食图片/zzpic16549_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/bpic10057_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/bpic7009_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/bpic7362_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/bpic7756_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/bpic7897_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/bpic8109_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/bpic8116_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/bpic8127_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/bpic8292_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/bpic8370_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/bpic8399_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/bpic8495_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/bpic8915_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/bpic9202_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/hpic202_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/hpic299_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/hpic519_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/wpic1196_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/wpic1302_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic12125_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic12281_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic12387_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic13067_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic13306_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic13343_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic13586_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic13646_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic13740_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic14097_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic14168_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic14354_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic14548_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic14926_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic14973_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic15969_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic16212_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic16254_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic16461_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic16583_s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Spider/风景图片/zzpic16701_s.jpg" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Threading$process_demo1.coverage" NAME="process-demo1 Coverage Results" MODIFIED="1557316789080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Threading$udp.coverage" NAME="多任务udp聊天器 Coverage Results" MODIFIED="1557235134115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Threading$.coverage" NAME="创建可迭代的对象 Coverage Results" MODIFIED="1557838580352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Threading$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1557060573586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="70198113">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="IPNB" value="1" />
+          <entry key="Python" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="3746" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/案例：多任务拷贝文件.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+              <folding>
+                <element signature="e#117#126#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/创建可迭代的对象.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/demo1.py" />
+        <option value="$PROJECT_DIR$/查看正在运行的线程.py" />
+        <option value="$PROJECT_DIR$/共享全局变量.py" />
+        <option value="$PROJECT_DIR$/线程共享全局变量.py" />
+        <option value="$PROJECT_DIR$/多任务udp聊天器.py" />
+        <option value="$PROJECT_DIR$/xx.ipynb" />
+        <option value="$PROJECT_DIR$/process-demo1.py" />
+        <option value="$PROJECT_DIR$/多进程间的通信.py" />
+        <option value="$PROJECT_DIR$/案例：多任务拷贝文件.py" />
+        <option value="$PROJECT_DIR$/创建可迭代的对象.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="114" />
+    <option name="y" value="213" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PySingleQuotedDocstringInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Threading" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Threading" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Threading" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.创建可迭代的对象">
+    <configuration name="查看正在运行的线程" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Threading" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/查看正在运行的线程.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="案例：多任务拷贝文件" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Threading" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/案例：多任务拷贝文件.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="创建可迭代的对象" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Threading" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/创建可迭代的对象.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="案例：多任务拷贝文件" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Threading" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/案例：多任务拷贝文件.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="多进程间的通信" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Threading" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/多进程间的通信.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="线程共享全局变量" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Threading" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/线程共享全局变量.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="共享全局变量" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Threading" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/共享全局变量.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="process-demo1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Threading" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/process-demo1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="多任务udp聊天器" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Threading" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/多任务udp聊天器.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.查看正在运行的线程" />
+      <item itemvalue="Python.多任务udp聊天器" />
+      <item itemvalue="Python.process-demo1" />
+      <item itemvalue="Python.案例：多任务拷贝文件" />
+      <item itemvalue="Python.创建可迭代的对象" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.创建可迭代的对象" />
+        <item itemvalue="Python.案例：多任务拷贝文件" />
+        <item itemvalue="Python.process-demo1" />
+        <item itemvalue="Python.多任务udp聊天器" />
+        <item itemvalue="Python.查看正在运行的线程" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8478f34e-44c7-4abd-841c-fdf001315064" name="Default Changelist" comment="" />
+      <created>1557060012295</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557060012295</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12178112" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32893288" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32893288" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/xx.ipynb" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/multiprocessing/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Lib/queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2131">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process-demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/查看正在运行的线程.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/线程共享全局变量.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/多任务udp聊天器.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="899">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/多进程间的通信.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/案例：多任务拷贝文件.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="e#117#126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/创建可迭代的对象.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
