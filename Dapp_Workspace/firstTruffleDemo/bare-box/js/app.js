@@ -1,4 +1,5 @@
-App = {
+'use strict'
+var App = {
 
     web3Provider: null,
     contracts: {},
@@ -8,30 +9,22 @@ App = {
     },
 
     initWeb3: function () {
-        // if (typeof web3 !== "undefined") {
-        //     App.web3Provider = web3.currentProvider;
-        //     web3 = new Web3(App.web3Provider);
-        //     //console.log(web3.eth.accounts);
-        // } else {
-        //     App.web3Provider = new Web3.providers.HttpProvider("http://127.0.0.1:7545");
-        //     web3 = new Web3(App.web3Provider);
-        // }
-
+        // 初始化web3
         if (typeof web3 !== "undefined") {
-            App.web3Provider = new Web3.providers.HttpProvider("http://127.0.0.1:7545");
-            web3 = new Web3(App.web3Provider);
-            console.log(web3.eth.accounts[0]);
-        } else {
             App.web3Provider = web3.currentProvider;
+            web3 = new Web3(App.web3Provider);
+        } else {
+            App.web3Provider = new Web3.providers.HttpProvider("http://127.0.0.1:7545");
             web3 = new Web3(App.web3Provider);
         }
         return App.initContract();
     },
 
     initContract: function () {
-
-        $.getJSON('../build/contracts/InfoContract.json', function (data) {
-            App.contracts.InfoContract = TruffleContract(data);
+        // 初始化合约
+        // 通过 truffle compile 得到的json文件
+        $.getJSON('../build/contracts/InfoContract.json', function (data) {  // 通过回调拿到json的内容
+            App.contracts.InfoContract = TruffleContract(data);  // 得到TruffleContract的对象
             App.contracts.InfoContract.setProvider(App.web3Provider);
             App.getInfo();
         });
@@ -40,8 +33,10 @@ App = {
 
     getInfo: function () {
         App.contracts.InfoContract.deployed().then(function (instance) {
+            //通过TruffleContract对象的deployed()得到合约的实例对象instace
             return instance.getInfo.call();
         }).then(function (result) {
+            // 在then()中拿到上一个return的返回值
             $("#loader").hide();
             $("#info").html(result[0] + "(" + result[1] + "years old)");
             console.log(result);
@@ -56,15 +51,14 @@ App = {
             var age = $('#age').val();
             $("#loader").show();
             App.contracts.InfoContract.deployed().then(function (instance) {
-                return instance.setInfo(name, age,{from: web3.eth.accounts[0]}).then(function (result) {
-                    return App.getInfo();
-                }).catch(function (err) {
-                    console.error(err);
-                });
+                return instance.setInfo.sendTransaction(name, age, {from: web3.eth.defaultAccount});
+            }).then(function (result) {
+                return App.getInfo();
+            }).catch(function (err) {
+                console.error(err);
             });
         });
-    },
-
+    }
 };
 
 
