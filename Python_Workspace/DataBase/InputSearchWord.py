@@ -1,4 +1,5 @@
 import pymysql
+import ConnectDataBase
 
 
 # def main():
@@ -17,14 +18,7 @@ import pymysql
 #     print(cursor.fetchall())
 class JD:
     def __init__(self):
-        self.conn = pymysql.connect(
-            host = "localhost",
-            port = 3306,
-            user = "root",
-            password = "lixuan",
-            database = "jing_dong",
-            charset = "utf8",
-        )
+        self.conn = ConnectDataBase.conn
         self.cursor = self.conn.cursor()
 
     def __del__(self):
