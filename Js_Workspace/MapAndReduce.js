@@ -1,3 +1,9 @@
+/*
+ * @Author: lixuan
+ * @Date: 2019-11-12 14:17:07
+ * @LastEditTime: 2019-11-12 14:19:57
+ * @Description: MapAndReduce.js
+ */
 // 高阶函数
 
 'use strict';
