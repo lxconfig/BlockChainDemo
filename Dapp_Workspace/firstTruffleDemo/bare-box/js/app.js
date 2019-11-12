@@ -1,3 +1,9 @@
+/*
+ * @Author: lixuan
+ * @Date: 2019-11-11 16:11:18
+ * @LastEditTime: 2019-11-11 16:11:19
+ * @Description: 
+ */
 'use strict'
 var App = {
 
@@ -23,7 +29,7 @@ var App = {
     initContract: function () {
         // 初始化合约
         // 通过 truffle compile 得到的json文件
-        $.getJSON('../build/contracts/InfoContract.json', function (data) {  // 通过回调拿到json的内容
+        $.getJSON('InfoContract.json', function (data) {  // 通过回调拿到json的内容
             App.contracts.InfoContract = TruffleContract(data);  // 得到TruffleContract的对象
             App.contracts.InfoContract.setProvider(App.web3Provider);
             App.getInfo();
