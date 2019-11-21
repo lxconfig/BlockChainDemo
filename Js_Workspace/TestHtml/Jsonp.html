@@ -1,0 +1,40 @@
+<!--
+ * @Author: lixuan
+ * @Date: 2019-11-21 16:49:29
+ * @LastEditTime: 2019-11-21 17:06:55
+ * @Description: jsonp
+ -->
+<html>
+    <head>
+        <title>Jsonp Demo</title>
+        <script>
+            function getPrice() {
+                var js = document.createElement("script");
+                head = document.getElementsByTagName("head")[0];
+                js.src = "http://api.money.126.net/data/feed/0000001,1399001?callback=refreshPrice";
+                // 防止多次刷新后<script>节点反复添加
+                if (head.lastChild.src === js.src) {
+                    // remove node js before insert it when the src between head and js is equilvent.
+                    head.removeChild(head.lastChild);
+                    head.appendChild(js);
+                } else {
+                    head.appendChild(js);
+                }
+                
+            }
+
+            function refreshPrice(data) {
+                var p = document.getElementById('test-jsonp');
+                p.innerHTML = '当前价格：' +
+                data['0000001'].name +': ' + 
+                data['0000001'].price + '；' +
+                data['1399001'].name + ': ' +
+                data['1399001'].price;                
+            }
+        </script>
+    </head>
+    <body>
+        <p id="test-jsonp">当前价格：</p>
+        <button type="button" onclick="getPrice()">刷新</button>
+    </body>
+</html>

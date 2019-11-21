@@ -1,0 +1,37 @@
+<!--
+ * @Author: lixuan
+ * @Date: 2019-11-21 15:54:08
+ * @LastEditTime: 2019-11-21 16:42:26
+ * @Description: use XMLHttpRequest object to update web page
+ -->
+<html>
+
+<head>
+    <title>AjaxDemo1</title>
+    <script>
+        function loadXMLDoc() {
+            var request;
+            if (window.XMLHttpRequest) {
+                request = new XMLHttpRequest();
+            } else {
+                request = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            request.onreadystatechange = function () {
+                if (request.readyState == 4 && request.status == 200) {
+                    document.getElementById("myDiv").innerHTML = request.responseText;
+                }
+            }
+            request.open("GET", "AjaxTxt.txt");
+            request.send();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="myDiv">
+        <h2>Let AJAX change this text</h2>
+    </div>
+    <button type="button" onclick="loadXMLDoc()">Change Content</button>
+</body>
+
+</html>
