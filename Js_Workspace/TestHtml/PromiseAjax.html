@@ -1,0 +1,47 @@
+<!--
+ * @Author: lixuan
+ * @Date: 2019-11-23 13:13:28
+ * @LastEditTime: 2019-11-23 14:29:17
+ * @Description: use Promise mode to accomplish ajax request
+ -->
+<html>
+
+<head>
+    <title>AjaxDemo2</title>
+    <script>
+        function loadXMLDoc(method, url, data) {
+            var request = new XMLHttpRequest();
+            return new Promise(function (resolve, reject) {
+                request.onreadystatechange = function () {
+                    if (request.readyState === 4 && request.status === 200) {
+                        resolve(request.responseText);
+                    } else {
+                        reject(request.status);
+                    }
+                };
+                request.open(method, url);
+                request.send(data);
+            });
+
+        }
+        function test() {
+            var p = loadXMLDoc("GET", "AjaxTxt.txt");
+            var div = document.getElementById("myDiv");
+            p.then(function (data) {
+                div.innerHTML = data;
+            }).catch(function (data) {
+                div.innerHTML = data;
+            })
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="myDiv">
+        <h2>Let AJAX change this text</h2>
+    </div>
+    <button type="button" onclick="test()">Change Content</button>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!--
+ * @Author: lixuan
+ * @Date: 2019-11-21 19:30:48
+ * @LastEditTime: 2019-11-21 20:21:22
+ * @Description: use jsonp get weather info
+-->
+
+<html>
+
+<head>
+    <title>获取天气信息</title>
+    <script>
+        function Getinfo() {
+            var script = document.createElement("script");
+            var head = document.getElementsByTagName("head")[0];
+            script.src =
+                "https://wis.qq.com/weather/common?source=xw&weather_type=forecast_1h|forecast_24h|index|alarm|limit|tips&province=广东&city=广州&callback=weatherInfo"
+            if (head.lastChild === script.src) {
+                head.removeChild(head.lastChild);
+                head.appendChild(script);
+            } else {
+                head.appendChild(script);
+            }
+        }
+
+        function weatherInfo(data) {
+            var p = document.createElement("p");
+            var div = document.getElementById("myDiv");
+            p.innerHTML = "天气:" + data["data"]["forecast_1h"]["0"].weather +
+                "<br>" + "温度:" + data["data"]["forecast_1h"]["0"].degree;
+            if (div.lastChild.innerHTML === p.innerHTML) {
+                div.removeChild(div.lastChild);
+                div.appendChild(p);
+            } else {
+                div.appendChild(p);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="myDiv">
+        <h1>weather info</h1>
+        <button id="weather" onclick="Getinfo()">刷新</button>
+    </div>
+</body>
+
+</html>
+
