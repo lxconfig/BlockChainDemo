@@ -1,12 +1,13 @@
 '''
 @Author: lixuan
 @Date: 2019-11-25 20:02:34
-@LastEditTime: 2019-11-25 21:10:25
+@LastEditTime: 2019-11-26 19:19:48
 @Description: design modelClass
 '''
 from django.db import models
 
 # Create your models here.
+# 定义模型类
 
 class BookInfo(models.Model):
     """图书模型类"""
