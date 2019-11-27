@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>显示图书信息</title>
+    </head>
+    <body>
+        <p>图书信息如下:</p>
+        <ul>
+            {% for book in books %}
+            <li><a href="/books/{{ book.id }}">{{ book.book_title }}</a></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

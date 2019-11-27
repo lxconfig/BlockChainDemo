@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>显示图书关联的人物信息</title>
+    </head>
+    <body>
+        <h1>{{ book.book_title }}</h1>
+        <p>人物信息如下:</p>
+        <ul>
+            {% for hero in heros %}
+                <li>{{ hero.name }}--{{ hero.comment }}</li>
+            {% empty %}
+                <li>没有人物信息</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

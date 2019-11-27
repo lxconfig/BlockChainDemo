@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader, RequestContext
+from booktest.models import BookInfo
 
 # Create your views here.
 # 定义视图函数
@@ -28,3 +29,27 @@ def index(request):
 #     res_html = temp.render(context)  # 用传递的数据去替换HTML中的变量，得到标准HTML页面
 #     # 4. 返回给浏览器
 #     return HttpResponse(res_html)
+
+
+def show_books(request):
+    books = BookInfo.objects.all()  # 通过M获取所有图书信息
+    return render(
+        request,
+        "booktest/show_books.html",  # 通过T返回页面
+        {
+            "books": books,
+        }
+    )
+
+
+def detail(request, id):
+    book = BookInfo.objects.get(id=id)
+    heros = book.heroinfo_set.all()
+    return render(
+        request,
+        'booktest/detail.html',
+        {
+            "book": book,
+            "heros": heros,
+        }
+    )

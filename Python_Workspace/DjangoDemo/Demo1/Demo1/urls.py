@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include("booktest.urls")),  # 包含booktest应用中的urls文件
+    url(r'^', include("infotest.urls")),
 ]
