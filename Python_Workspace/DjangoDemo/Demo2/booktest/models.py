@@ -21,3 +21,11 @@ class HeroInfo(models.Model):
     hbook = models.ForeignKey("BookInfo")
     # 删除标记
     isDelete = models.BooleanField(default=False)
+
+
+class AreaInfo(models.Model):
+    """地级市自关联"""
+    # 城市名
+    area_name = models.CharField(max_length=30)
+    # 关联属性（一对多类型）
+    parent_name = models.ForeignKey('AreaInfo', null=True, blank=True)
