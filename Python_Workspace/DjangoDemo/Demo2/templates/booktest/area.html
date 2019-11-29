@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title> 显示城市信息 </title>
+    </head>
+    <body>
+        <h1> 当前城市: </h1>
+        <p> {{ area.area_name}}</p>
+        <h2> 上级城市: </h2>
+        <p> {{ up_area.area_name }}</p>
+        <h3> 下级城市: </h3>
+        <ul>
+            {% for areas in down_area %}
+                <li>{{ areas.area_name }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
