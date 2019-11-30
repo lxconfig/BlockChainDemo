@@ -29,3 +29,7 @@ class AreaInfo(models.Model):
     area_name = models.CharField(max_length=30)
     # 关联属性（一对多类型）
     parent_name = models.ForeignKey('AreaInfo', null=True, blank=True)
+
+class UserInfo(models.Model):
+    username = models.CharField(max_length=20)
+    password = models.CharField(max_length=20)

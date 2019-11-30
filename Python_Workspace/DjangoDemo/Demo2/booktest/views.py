@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse, HttpResponseRedirect
-from booktest.models import BookInfo, HeroInfo, AreaInfo
+from booktest.models import BookInfo, HeroInfo, AreaInfo, UserInfo
 
 # Create your views here.
 
@@ -52,3 +52,21 @@ def area(request):
             "down_area": down_area,
         }
     )
+
+def test(request, arg):
+    return HttpResponse(arg)
+
+
+def login(request):
+    return render(request, 'booktest/login.html')
+
+def login_check(request):
+    # request.POST  post提交的参数
+    # request.GET   get提交的参数
+    # 都是QueryDict的对象，类似字典
+    username = request.POST.get('username')
+    password = request.POST.get('password')
+    if username == "lixuan" and password == "123":
+        return HttpResponse('ok')
+    else: 
+        return HttpResponse('error')
