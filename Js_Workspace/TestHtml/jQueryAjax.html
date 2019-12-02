@@ -1,0 +1,50 @@
+<!--
+ * @Author: lixuan
+ * @Date: 2019-12-02 14:33:10
+ * @LastEditTime: 2019-12-02 16:39:41
+ * @Description: jQuery ajax
+-->
+
+<html>
+
+<head>
+    <title> jQuery ajax </title>
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <p id="test-jsonp">当前价格：</p>
+    <button type="button">刷新</button>
+    <!-- <button type="button" onclick="getPrice()">刷新</button> -->
+</body>
+
+</html>
+
+<script>
+        // function getPrice() {
+        //     var url = "http://api.money.126.net/data/feed/0000001,1399001";
+        //     $.ajax(url, {
+        //         dataType: 'jsonp',
+        //         jsonp: 'callback',
+        //         jsonpCallback: 'refresh'
+        //     });
+        // }
+
+        $('[type=button]').click(function () {
+            var url = "http://api.money.126.net/data/feed/0000001,1399001";
+            $.ajax(url, {
+                dataType: 'jsonp',
+                jsonp: 'callback',
+                jsonpCallback: 'refresh'
+            });
+        })
+
+        function refresh(data) {
+            var p = document.getElementById('test-jsonp');
+            p.innerHTML = '当前价格：' +
+                data['0000001'].name + ': ' +
+                data['0000001'].price + '；' +
+                data['1399001'].name + ': ' +
+                data['1399001'].price;
+        }
+    </script>

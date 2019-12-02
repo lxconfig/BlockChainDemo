@@ -1,0 +1,67 @@
+<!--
+ * @Author: lixuan
+ * @Date: 2019-12-02 16:12:09
+ * @LastEditTime: 2019-12-02 16:37:26
+ * @Description: 自定义jQuery插件
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Plugin</title>
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="test-external">
+        <p>如何学习<a href="http://jquery.com">jQuery</a>？</p>
+        <p>首先，你要学习<a href="/wiki/1022910821149312">JavaScript</a>，并了解基本的<a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>。</p>
+    </div>
+</body>
+
+</html>
+
+<script>
+        $.fn.external = function () {
+            // var all_a = $('test-external a');
+            this.filter('a').each(function () {
+                var a = $(this);
+                var url = a.attr('href');
+                if (url && (url.indexOf("http://") === 0 || url.indexOf("https://") === 0)) {
+                    a.attr("href", "#0")
+                        .removeAttr("target")
+                        .click(function () {
+                            if (confirm('确定前往' + url + '吗？')) {
+                                window.open(url);
+                            }
+                        })
+                }
+            })
+            return this;
+        }
+        $('#test-external a').external();
+
+        // $.fn.external = function () {
+        //     // return返回的each()返回结果，支持链式调用:
+        //     return this.filter('a').each(function () {
+        //         // 注意: each()内部的回调函数的this绑定为DOM本身!
+        //         var a = $(this);
+        //         var url = a.attr('href');
+        //         if (url && (url.indexOf('http://') === 0 || url.indexOf('https://') === 0)) {
+        //             a.attr('href', '#0')
+        //                 .removeAttr('target')
+        //                 .append(' <i class="uk-icon-external-link"></i>')
+        //                 .click(function () {
+        //                     if (confirm('你确定要前往' + url + '？')) {
+        //                         window.open(url);
+        //                     }
+        //                 });
+        //         }
+        //     });
+        // }
+        // $('#test-external a').external();
+    </script>
