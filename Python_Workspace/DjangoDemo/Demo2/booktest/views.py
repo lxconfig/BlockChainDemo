@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from booktest.models import BookInfo, HeroInfo, AreaInfo, UserInfo
 
 # Create your views here.
@@ -70,3 +70,11 @@ def login_check(request):
         return HttpResponse('ok')
     else: 
         return HttpResponse('error')
+
+def ajax_test(request):
+    # 显示ajax页面
+    return render(request, 'booktest/ajax_test.html')
+
+def ajax_handle(request):
+    # ajax请求处理
+    return JsonResponse({"res": 1})  # 会被转换为JSON数据传给data

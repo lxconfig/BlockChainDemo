@@ -8,5 +8,7 @@ urlpatterns = [
     url(r'area', views.area),
     url(r'^test/(?P<arg>\w+=\d+)',views.test),
     url(r'^login$', views.login),
-    url(r'^login_check$', views.login_check)
+    url(r'^login_check$', views.login_check),
+    url(r'^ajax_test$', views.ajax_test),
+    url(r'^ajax_handle$', views.ajax_handle),
 ]
