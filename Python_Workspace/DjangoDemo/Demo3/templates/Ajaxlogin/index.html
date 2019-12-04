@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/static/js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('[type=button]').click(function () {
+                location.href = '/loginOut';
+            })
+        })
+    </script>
     <title>登录成功</title>
 </head>
 <body>
     <p>登录成功</p>
+    <input type="button" value='注销'>
 </body>
 </html>

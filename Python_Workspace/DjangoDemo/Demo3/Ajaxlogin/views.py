@@ -8,11 +8,17 @@ def login(request):
     return render(request, 'Ajaxlogin/login.html')
 
 def common_login(request):
-    if 'username' in request.COOKIES:
-        username = request.COOKIES['username']
+    # 先判断用户是否已经登录过
+    if request.session.has_key('isLogin'):  # session是否包含某个key
+        # 用户已登录
+        return redirect('/index')
     else:
-        username = ''
-    return render(request, 'Ajaxlogin/common_login.html', {'username': username})
+        # 用户未登录
+        if 'username' in request.COOKIES:
+            username = request.COOKIES['username']
+        else:
+            username = ''
+        return render(request, 'Ajaxlogin/common_login.html', {'username': username})
 
 def common_login_check(request):
     username = request.POST.get('username')
@@ -22,9 +28,15 @@ def common_login_check(request):
         response = redirect('/index')
         if remember == 'on':
             response.set_cookie('username', username, max_age=7*24*3600)
+        # 只要session中包含isLogin字段，则表示用户已经登录
+        request.session['isLogin'] = True
         return response
     else:
         return redirect('/common_login')
+
+def loginOut(request):
+    del request.session['isLogin']
+    return redirect('/common_login')
 
 def login_check(request):
     username = request.POST.get('username')
@@ -57,3 +69,13 @@ def get_cookie(request):
     # 取cookie的值
     num = request.COOKIES['num']
     return HttpResponse(num)
+
+def set_session(request):
+    request.session['username'] = 'lixuan'
+    request.session['age'] = 18
+    return HttpResponse('设置session')
+
+def get_session(request):
+    username = request.session['username']
+    age = request.session['age']
+    return HttpResponse(username + str(age))
