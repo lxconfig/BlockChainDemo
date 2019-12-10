@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}父页面文件{% endblock title %}</title>
+</head>
+<body>
+    <h1>导航条</h1>
+    {% block test %}
+        <h3>父页面中的信息，不希望被继承，而应该被子页面改写</h3>
+    {% endblock test%}
+    <h1>版权信息</h1>
+</body>
+</html>

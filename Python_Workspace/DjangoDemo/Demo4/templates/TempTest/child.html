@@ -1,0 +1,6 @@
+{% extends 'TempTest/base.html' %}
+{% block title %} 子页面文件 {% endblock title %}
+{% block test %}
+    {{ block.super }}
+    <h3>子页面中的信息，重写了父页面中test块的内容</h3>
+{% endblock test %}
