@@ -2,6 +2,10 @@ from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.template import loader, RequestContext
 from TempTest.models import BookInfo
+from PIL import Image, ImageDraw, ImageFont
+from django.utils.six import BytesIO
+import random
+from django.core.urlresolvers import reverse
 
 # Create your views here.
 
@@ -53,6 +57,10 @@ def login_check(request):
     username = request.POST.get('username')
     password = request.POST.get('password')
     remember = request.POST.get('remember')  # 点击后传过来的是on，否则是None
+    user_verified_code = request.POST.get('verified_code')   # 用户输入的验证码
+    io_verified_code = request.session.get('verified_code')  # session保存的验证码
+    if user_verified_code != io_verified_code:
+        return redirect('/login')
     if username == 'lixuan' and password == '123':
         response = redirect('/change_pwd')
         if remember == 'on':
@@ -82,3 +90,65 @@ def change_pwd(request):
 def change_pwd_action(request):
     pwd = request.POST.get('pwd')
     return HttpResponse("修改密码为:%s" % pwd)
+
+def verify_code(request):
+    # 定义变量，用于画面的背景色，宽，高
+    bgcolor = (random.randrange(20, 100), random.randrange(20, 100), 255)
+    width, height = 100, 25
+    # 创建画布对象
+    im = Image.new('RGB', (width, height), bgcolor)
+    # 创建画笔对象
+    draw = ImageDraw.Draw(im)
+    # 调用画笔的point()函数绘制噪点
+    for i in range(0, 100):
+        xy = (random.randrange(0, width), random.randrange(0, height))
+        fill = (random.randrange(0, 255), 255, random.randrange(0, 255))
+        draw.point(xy, fill=fill)
+    # 定义验证码的候选字符
+    str1 = 'ABCD1234EFGHI567JKLMNOPQRST8UVWX90YZ'
+    # 随机取4个值作为验证码
+    rand_str = ''
+    for i in range(0, 4):
+        rand_str += str1[random.randrange(0, len(str1))]
+    # 构造字体对象
+    font = ImageFont.truetype('FreeMono.ttf', 23)
+    # 构造字体颜色
+    fontcolor = (255, random.randrange(0, 255), random.randrange(0, 255))
+    # 绘制4个字
+    draw.text((5, 2), rand_str[0], font=font, fill=fontcolor)
+    draw.text((25, 2), rand_str[1], font=font, fill=fontcolor)
+    draw.text((50, 2), rand_str[2], font=font, fill=fontcolor)
+    draw.text((75, 2), rand_str[3], font=font, fill=fontcolor)
+    # 释放画笔
+    del draw
+    # 存入session，进行验证
+    request.session['verified_code'] = rand_str
+    # 内存文件操作
+    buf = BytesIO()
+    # 将图片保存在内存中，类型为png
+    im.save(buf, 'png')
+    # 将内存中的图片数据返回给客户端，类型为png
+    return HttpResponse(buf.getvalue(), 'image/png')
+
+def url_reverse(request):
+    return render(request, 'TempTest/url_reverse.html')
+
+def show_args(request, a):
+    return HttpResponse('a = %s' % a)
+
+def show_kwargs(request, a, b):
+    return HttpResponse('a = %s, b = %s' % (a, b))
+
+def reverse_in_redirect(request):
+    # url为动态生成的地址
+    url = reverse('TempTest:index')
+    # print(url)
+    return redirect(url)
+
+def show_ip(request):
+    # 可以拒绝某些ip访问网站
+    # exclude_ip = ['10.21.21.115']
+    # user_ip = request.META['REMOTE_ADDR']
+    # if user_ip in exclude_ip:
+    #     return HttpResponse('<h1>Forbidden</h1>')
+    return render(request, 'TempTest/show_ip.html', {'user_ip': user_ip})

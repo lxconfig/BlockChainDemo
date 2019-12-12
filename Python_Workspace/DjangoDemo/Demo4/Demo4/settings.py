@@ -49,6 +49,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'TempTest.middleware.BlockIpMiddleware',  # 注册中间件类
+    'TempTest.middleware.TestMiddleware',
 )
 
 ROOT_URLCONF = 'Demo4.urls'
@@ -92,7 +94,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 

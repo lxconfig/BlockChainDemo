@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>url反向解析</title>
+</head>
+<body>
+    url反向解析: <br/>
+    <a href='{% url "TempTest:index" %}'>首页</a><br/>
+    位置参数的url反向解析: <br/>
+    <a href='{% url "TempTest:args" 1 %}'>首页</a><br/>
+    关键字参数的url反向解析: <br/>
+    <a href="{% url 'TempTest:kwargs' a=10 b=2 %}">首页</a><br/>
+</body>
+</html>
