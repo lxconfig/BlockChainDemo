@@ -1,11 +1,13 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.template import loader, RequestContext
-from TempTest.models import BookInfo
+from TempTest.models import BookInfo, PicTest, AreaInfo
 from PIL import Image, ImageDraw, ImageFont
 from django.utils.six import BytesIO
 import random
 from django.core.urlresolvers import reverse
+from Demo4 import settings
+from django.core.paginator import Paginator
 
 # Create your views here.
 
@@ -152,3 +154,38 @@ def show_ip(request):
     # if user_ip in exclude_ip:
     #     return HttpResponse('<h1>Forbidden</h1>')
     return render(request, 'TempTest/show_ip.html', {'user_ip': user_ip})
+
+def upload_pic(request):
+    """用户上传图片"""
+    return render(request, 'TempTest/upload_pic.html')
+
+def pic_handle(request):
+    """上传图片处理"""
+    # 1. 获取上传文件的处理对象
+    pic = request.FILES['pic']  # 'pic'是input项的name值
+    # print(type(pic))
+    # 2. 创建一个文件写入图片的数据
+    save_path = '%s/TempTest/%s' % (settings.MEDIA_ROOT, pic.name)  # 图片保存的路径，pic.name表示上传文件的名字
+    with open(save_path, 'wb') as f:
+        # pic.chunks()返回一个生成器，每次返回图片文件的一小块
+        for content in pic.chunks():
+            f.write(content)
+    # 3. 在数据库中保存上传记录
+    PicTest.objects.create(goods_pic='TempTest/%s' % pic.name)
+    # 4. 返回响应
+    return HttpResponse('ok')
+
+def show_areas(request, index):
+    # 1. 查询数据库数据
+    areas = AreaInfo.objects.filter(parent_name__isnull=True)
+    # 2. 分页，每页显示10条, paginator是Paginator类的对象
+    paginator = Paginator(areas, 10)
+    # 3. 获取第一页的内容,pages是Page类的对象(可遍历)，其属性object_list是包含第一页内容的查询集
+    if index == '':
+        index = 1
+    else:
+        index = int(index)
+    pages = paginator.page(index)
+    print(pages.previous_page_number())
+    # 4. 返回响应
+    return render(request, 'TempTest/show_areas.html', {'pages': pages})

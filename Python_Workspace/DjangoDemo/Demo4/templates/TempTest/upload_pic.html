@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>上传图片</title>
+</head>
+<body>
+    <form method="POST", enctype="multipart/form-data" action='/pic_handle'>
+        {% csrf_token %}
+        上传图片:<input type="file" name='pic'><br/>
+        <input type="submit" value="上传">
+    </form>
+</body>
+</html>

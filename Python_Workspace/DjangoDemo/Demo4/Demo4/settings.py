@@ -49,8 +49,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
-    'TempTest.middleware.BlockIpMiddleware',  # 注册中间件类
-    'TempTest.middleware.TestMiddleware',
+    # 'TempTest.middleware.BlockIpMiddleware',  # 注册中间件类
+    # 'TempTest.middleware.TestMiddleware',
 )
 
 ROOT_URLCONF = 'Demo4.urls'
@@ -107,3 +107,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# 设置上传文件的保存目录
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')

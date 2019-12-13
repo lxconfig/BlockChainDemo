@@ -18,5 +18,8 @@ urlpatterns = [
     url(r'^show_kwargs/(?P<a>\d+)/(?P<b>\d+)$', views.show_kwargs, name='kwargs'),
     url(r'^reverse_in_redirect$', views.reverse_in_redirect),
     url(r'^show_ip$', views.show_ip),
+    url(r'^upload_pic$', views.upload_pic),
+    url(r'^pic_handle$', views.pic_handle),
+    url(r'^show_areas/(?P<index>\d*)$', views.show_areas),
 ]
 

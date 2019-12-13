@@ -26,3 +26,7 @@ class AreaInfo(models.Model):
 
     class Meta:
         db_table = 'booktest_areainfo'
+
+class PicTest(models.Model):
+    '''上传图片模型类'''
+    goods_pic = models.ImageField(upload_to='TempTest')  # upload_to表示图片上传到media文件夹下的哪个目录
