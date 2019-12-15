@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/static/js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $.get('/prov', function(data) {
+                result = data.data;
+                prov = $("#prov");
+                $.each(result, function(key, value) {
+                    // key是默认的index序号，value是一个数组包含id和area_name
+                    // console.log(key,value)
+                    option = '<option id=' + value[0] + '>' + value[1] + '</option>';
+                    prov.append(option);
+                })
+            });
+            $('#prov').change(function() {
+                // 当选择一个省之后，发起ajax请求市的信息
+                prov_id = $(this).find("option:selected").attr("id");
+                console.log(prov_id);
+                $.get('/city/'+ prov_id, function(data) {
+                    result = data.data;
+                    city = $("#city");
+                    country = $("#country");
+                    // 每次先把下拉框(市、县))清空再添加
+                    country.empty().append('<option>---请选择县---</option>');
+                    city.empty().append('<option>---请选择市---</option>')
+                    $.each(result, function(key, value) {
+                        option = '<option id=' + value[0] + '>' + value[1] + '</option>';
+                        city.append(option);
+                    })
+                })
+            });
+            $("#city").change(function () {
+                city_id = $(this).find('option:selected').attr('id');
+                $.get('/country/' + city_id, function (data) {
+                    result = data.data;
+                    country = $("#country");
+                    country.empty().append('<option>---请选择县---</option>');
+                    $.each(result, function (key, value) {
+                        option = '<option id=' + value[0] + '>' + value[1] + '</option>';
+                        country.append(option);
+                    })
+                })
+            });
+
+        })
+    </script>
+    <title>省市县三级联动</title>
+</head>
+
+<body>
+    <select id="prov">
+        <option>---请选择省---</option>
+    </select>
+    <select id="city">
+        <option>---请选择市---</option>
+    </select>
+    <select id="country">
+        <option>---请选择县---</option>
+    </select>
+</body>
+
+</html>

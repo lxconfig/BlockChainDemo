@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.template import loader, RequestContext
 from TempTest.models import BookInfo, PicTest, AreaInfo
 from PIL import Image, ImageDraw, ImageFont
@@ -189,3 +189,35 @@ def show_areas(request, index):
     print(pages.previous_page_number())
     # 4. 返回响应
     return render(request, 'TempTest/show_areas.html', {'pages': pages})
+
+def sanji(request):
+    return render(request, 'TempTest/sanji.html')
+
+def prov(request):
+    """获取省级城市的数据"""
+    provs_data = AreaInfo.objects.filter(parent_name__isnull=True)
+    # 拼接出json数据格式
+    data = []
+    for prov in provs_data:
+        data.append((prov.id, prov.area_name))
+    return JsonResponse({'data': data})
+
+def city(request, id):
+    #  通过一类查询多类的方式获取数据
+    area = AreaInfo.objects.get(id=id)  # 根据id查找是哪个市
+    areas = area.areainfo_set.all()     # 再查关联属性中等于这个市的数据
+    # 或
+    # areas = AreaInfo.objects.filter(parent_name__id=id)
+    # 拼接出json数据格式
+    data = []
+    for city in areas:
+        data.append((city.id, city.area_name))
+    return JsonResponse({'data': data})
+
+def country(request, id):
+    area = AreaInfo.objects.get(id=id)
+    areas = area.areainfo_set.all()
+    data = []
+    for country in areas:
+        data.append((country.id, country.area_name))
+    return JsonResponse({'data': data})

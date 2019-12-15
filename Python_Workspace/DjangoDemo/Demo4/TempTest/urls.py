@@ -21,5 +21,9 @@ urlpatterns = [
     url(r'^upload_pic$', views.upload_pic),
     url(r'^pic_handle$', views.pic_handle),
     url(r'^show_areas/(?P<index>\d*)$', views.show_areas),
+    url(r'^sanji$', views.sanji),
+    url(r'^prov$', views.prov),
+    url(r'^city/(\d+)$', views.city),
+    url(r'^country/(\d+)$', views.country),
 ]
 
