@@ -221,3 +221,15 @@ def country(request, id):
     for country in areas:
         data.append((country.id, country.area_name))
     return JsonResponse({'data': data})
+
+
+# 设置session信息，并保存到redis数据库中
+def set_session(request):
+    request.session['name'] = 'lixuan'
+    request.session['age'] = 23
+    return HttpResponse('设置session成功')
+
+def get_sessio(request):
+    name = request.session['name']
+    age = request.session['age']
+    return HttpResponse('获取session')

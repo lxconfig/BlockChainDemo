@@ -25,5 +25,7 @@ urlpatterns = [
     url(r'^prov$', views.prov),
     url(r'^city/(\d+)$', views.city),
     url(r'^country/(\d+)$', views.country),
+    url(r'^set_session$', views.set_session),
+    url(r'^get_session$', views.get_sessio),
 ]
 
