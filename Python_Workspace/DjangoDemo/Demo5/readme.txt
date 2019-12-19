@@ -1,0 +1,1 @@
+Django version is 3.0
