@@ -1,5 +1,5 @@
 from django.db import models
-
+from tinymce.models import HTMLField  # 富文本编辑器
 
 # Create your models here.
 
@@ -30,3 +30,22 @@ class AreaInfo(models.Model):
 class PicTest(models.Model):
     '''上传图片模型类'''
     goods_pic = models.ImageField(upload_to='TempTest')  # upload_to表示图片上传到media文件夹下的哪个目录
+
+
+class test(models.Model):
+    """富文本编辑器实例"""
+    STATUS_CHOICES = (
+        (0, '上线'),
+        (1, '下线'),
+    )
+    status = models.SmallIntegerField(default=1, choices = STATUS_CHOICES, verbose_name='状态')
+    details = HTMLField(blank=True, verbose_name='详情')
+
+    class Meta:
+        db_table = 'tests'
+        verbose_name = '富文本测试'
+        verbose_name_plural = verbose_name
+    
+    # def __str__(self):
+    #     return self.details
+    

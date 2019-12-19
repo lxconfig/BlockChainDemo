@@ -37,7 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'TempTest'
+    'TempTest',
+    'tinymce',   # 富文本编辑器
 )
 
 MIDDLEWARE_CLASSES = (
@@ -119,3 +120,10 @@ SESSION_REDIS_PORT = 6379
 SESSION_REDIS_DB = 1
 SESSION_REDIS_PASSWORD = ''  # 链接redis的密码
 SESSION_REDIS_PREFIX = 'session'
+
+# 富文本编辑器配置文件
+TINYMCE_DEFAULT_CONFIG = {
+    "theme": 'advanced',
+    "width": 800,
+    "height": 600,
+}

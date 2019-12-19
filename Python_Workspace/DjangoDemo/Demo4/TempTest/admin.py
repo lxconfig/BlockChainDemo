@@ -1,5 +1,5 @@
 from django.contrib import admin
-from TempTest.models import AreaInfo, PicTest
+from TempTest.models import AreaInfo, PicTest, test
 
 # Register your models here.
 
@@ -37,3 +37,5 @@ class AreaInfoAdmin(admin.ModelAdmin):
 admin.site.register(AreaInfo, AreaInfoAdmin)
 
 admin.site.register(PicTest)
+
+admin.site.register(test)
