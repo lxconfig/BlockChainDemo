@@ -121,3 +121,29 @@ TINYMCE_DEFAULT_CONFIG = {
     'width': 600,         # 编辑器的宽
     'height': 400,        # 编辑器的高
 }
+
+# 发送邮件配置，163邮箱为例
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# # smtp服务地址
+# EMAIL_HOST = 'smtp.163.com'
+# EMAIL_PORT = 25
+# # 发送邮件的邮箱
+# EMAIL_HOST_USER = 'lixuan_gdut@163.com'
+# # 客户端授权码
+# EMAIL_HOST_PASSWORD = 'shisan19960706'
+# # 收件人看到的发件人
+# EMAIL_FROM = '天天生鲜<lixuan_gdut@163.com>'
+
+# qq邮箱
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# smtp服务地址
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_PORT = 25
+# 开启ssl加密
+# EMAIL_USE_SSL = True
+# 发送邮件的邮箱
+EMAIL_HOST_USER = '525868229@qq.com'
+# 客户端授权码
+EMAIL_HOST_PASSWORD = 'kmyttjmruhvtbidc'
+# 收件人看到的发件人
+EMAIL_FROM = '天天生鲜<525868229@qq.com>'
