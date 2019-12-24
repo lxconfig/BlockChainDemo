@@ -8,6 +8,7 @@ from itsdangerous import SignatureExpired  # 加密数据过期的异常
 from django.conf import settings
 from django.http import HttpResponse
 from django.core.mail import send_mail
+from celery_tasks.tasks import send_register_active_email  # 导入发送邮件任务函数
 
 # Create your views here.
 
@@ -83,18 +84,23 @@ class RegisterView(View):
         token = token.decode()
 
         # 发邮件
-        # 邮件主题（标题）
-        subject = "天天生鲜-日夜兼程·急速送达"
-        # 邮件正文,只能输入字符串
-        message = ""
-        # html_message可以解析html标签
-        html_message = '<h1>%s, 欢迎您注册天天生鲜，请点击下面的链接激活账号!</h1><br/><a href="http://127.0.0.1:8000/user/active/%s"> \
-        http://127.0.0.1:8000/user/active/%s</a>' % (username, token, token)
-        # 发件人
-        sender = settings.EMAIL_FROM
-        # 收件人
-        receiver = [email]
-        send_mail(subject, message, sender, receiver, html_message=html_message)
+        # 使用celery异步发送邮件
+        # 使用delay方法将任务放到中间人里
+        send_register_active_email.delay(email, username, token)
+
+        # # 邮件主题（标题）
+        # subject = "天天生鲜-日夜兼程·急速送达"
+        # # 邮件正文,只能输入字符串
+        # message = ""
+        # # html_message可以解析html标签
+        # html_message = '<h1>%s, 欢迎您注册天天生鲜，请点击下面的链接激活账号!</h1><br/><a href="http://127.0.0.1:8000/user/active/%s"> \
+        # http://127.0.0.1:8000/user/active/%s</a>' % (username, token, token)
+        # # 发件人
+        # sender = settings.EMAIL_FROM
+        # # 收件人
+        # receiver = [email]
+        # send_mail(subject, message, sender, receiver, html_message=html_message)
+        
         # 返回响应，跳转到首页
         return redirect(reverse("goods:index"))
 
