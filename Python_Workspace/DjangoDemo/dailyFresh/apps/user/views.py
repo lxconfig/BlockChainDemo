@@ -9,6 +9,10 @@ from django.conf import settings
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from celery_tasks.tasks import send_register_active_email  # 导入发送邮件任务函数
+from django.contrib.auth import authenticate, login        # 导入django自带登录验证及登录信息保存session模块
+from PIL import Image, ImageDraw, ImageFont                # 加入验证码
+from django.utils.six import BytesIO
+import random
 
 # Create your views here.
 
@@ -128,7 +132,47 @@ class ActiveView(View):
 class LoginView(View):
     """用户登录类视图"""
     def get(self, request):
-        return render(request, 'login.html')
+        if 'username' in request.COOKIES:
+            username = request.COOKIES.get('username')
+            checked = 'checked'
+        else:
+            username = ''
+            checked = ''
+        return render(request, 'login.html', {'username': username, 'checked': checked}) 
+
+    def post(self, request):
+        """登录校验"""
+        # 接收数据
+        username = request.POST.get('username')
+        password = request.POST.get('pwd')
+        # 校验数据
+        if not all([username, password]):
+            return render(request, 'login.html', {'errorMsg': '数据不完整'})
+        # 判断用户名与密码是否匹配
+        user = authenticate(username=username, password=password)
+
+        if user is not None:
+            # 用户名与密码正确
+            if user.is_active:
+                # 用户已激活
+                # 记录用户登录状态(保存信息到session中)
+                login(request, user)
+                response = redirect(reverse('goods:index'))
+                remember = request.POST.get('remember')
+                if remember == 'on':
+                    # 需要记住用户名
+                    response.set_cookie('username', username, max_age=7*24*3600)
+                else:
+                    # 不需要记住用户名
+                    response.delete_cookie('username')
+                return response
+            else:
+                return render(request, 'login.html', {'errorMsg': '账户未激活'})
+        else:
+            # 用户名或密码错误
+            return render(request, 'login.html', {'errorMsg': '用户名或密码错误'})
+
+
 
 
 

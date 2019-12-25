@@ -298,7 +298,6 @@ html,body{height:100%}
 .pwd_error{top:110px;}
 
 .more_input{position:absolute;left:0;top:130px;width:100%}
-
 .more_input input{float:left;margin-top:2px;}
 .more_input label{float:left;margin-left:10px;}
 .more_input a{float:right;color:#666}
