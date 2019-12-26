@@ -172,8 +172,21 @@ class LoginView(View):
             # 用户名或密码错误
             return render(request, 'login.html', {'errorMsg': '用户名或密码错误'})
 
+# /user
+class UserInfoView(View):
+    """用户中心-信息页"""
+    def get(self, request):
+        # 返回一个值判断哪个页面被选中了
+        return render(request, 'user_center_info.html', {"page": 'user'})
 
+# /user/order
+class UserOrderView(View):
+    """用户中心-订单页"""
+    def get(self, request):
+        return render(request, 'user_center_order.html', {"page": 'order'})
 
-
-
-
+# /user/address
+class UserAddressView(View):
+    """用户中心-地址页"""
+    def get(self, request):
+        return render(request, 'user_center_site.html', {"page": 'address'})

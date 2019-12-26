@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% block title %}天天生鲜-注册{% endblock title %}
 {% load staticfiles %}
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>天天生鲜-注册</title>
-
-    <!-- <link rel='stylesheet' type='text/css' href='/static/css/main.css'>
-    <link rel='stylesheet' type='text/css' href='/static/css/reset.css'> -->
-    <!--通过动态加载的方式引入css文件-->
-    <link rel='stylesheet' type='text/css' href='{% static "css/main.css" %}'>
-    <link rel='stylesheet' type='text/css' href='{% static "css/reset.css" %}'>
-
-    <!-- <script type='text/javascript' src='/static/js/jquery.min.js'></script>
-    <script type='text/javascript' src='/static/js/register.js'></script> -->
+{% block topfiles %}
     <!--通过动态加载的方式引入js文件-->
     <script type='text/javascript' src='{% static "js/jquery.min.js" %}'></script>
     <script type='text/javascript' src='{% static "js/register.js" %}'></script>
-
     <script>
         // 出现错误时弹出提示框
         var len = "{{ errorMsg }}".length;
@@ -26,9 +12,10 @@
             alert("{{ errorMsg }}");
         }
     </script>
-</head>
-
-<body>
+{% endblock topfiles %}
+{% block header_con %}{% endblock header_con %}
+{% block search_bar %}{% endblock search_bar %}
+{% block body %}
     <div class="register_con">
         <div class="l_con fl">
             <a class="reg_logo"><img src="/static/images/logo02.png"></a>
@@ -80,20 +67,4 @@
         </div>
 
     </div>
-
-    <div class="footer no-mp">
-        <div class="foot_link">
-            <a href="#">关于我们</a>
-            <span>|</span>
-            <a href="#">联系我们</a>
-            <span>|</span>
-            <a href="#">招聘人才</a>
-            <span>|</span>
-            <a href="#">友情链接</a>
-        </div>
-        <p>CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved</p>
-        <p>电话：010-****888 京ICP备*******8号</p>
-    </div>
-</body>
-
-</html>
+{% endblock body %}
