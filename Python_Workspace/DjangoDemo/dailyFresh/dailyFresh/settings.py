@@ -162,3 +162,6 @@ CACHES = {
 # 配置session存储，保存在缓存(redis)中
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "default"
+
+#  未登录时请求某个页面(需要登录才能显示)跳转到的页面
+LOGIN_URL = '/user/login'

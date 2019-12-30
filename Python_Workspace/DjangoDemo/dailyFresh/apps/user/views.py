@@ -9,10 +9,11 @@ from django.conf import settings
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from celery_tasks.tasks import send_register_active_email  # 导入发送邮件任务函数
-from django.contrib.auth import authenticate, login        # 导入django自带登录验证及登录信息保存session模块
+from django.contrib.auth import authenticate, login, logout        # 导入django自带登录验证及登录信息保存session模块,登出模块
 from PIL import Image, ImageDraw, ImageFont                # 加入验证码
 from django.utils.six import BytesIO
 import random
+from utils.mixin import LoginRequiredMixin                 # mixin类,需要登录后才能访问的页面先继承此类
 
 # Create your views here.
 
@@ -157,7 +158,10 @@ class LoginView(View):
                 # 用户已激活
                 # 记录用户登录状态(保存信息到session中)
                 login(request, user)
-                response = redirect(reverse('goods:index'))
+                # 获取登录之后，要跳转到的url,并且设置默认值(next值不一定总是存在)
+                next_url = request.GET.get('next', reverse('goods:index'))
+                # 跳转到next_url
+                response = redirect(next_url)
                 remember = request.POST.get('remember')
                 if remember == 'on':
                     # 需要记住用户名
@@ -172,21 +176,39 @@ class LoginView(View):
             # 用户名或密码错误
             return render(request, 'login.html', {'errorMsg': '用户名或密码错误'})
 
+
+# /user/logout
+class LogoutView(View):
+    """用户注销登录类视图"""
+    def get(self, request):
+        # 使用Django自带的登出功能
+        # 清除session信息
+        logout(request)
+        return redirect(reverse('goods:index'))
+
+
 # /user
-class UserInfoView(View):
+class UserInfoView(LoginRequiredMixin, View):
     """用户中心-信息页"""
     def get(self, request):
         # 返回一个值判断哪个页面被选中了
         return render(request, 'user_center_info.html', {"page": 'user'})
 
+
 # /user/order
-class UserOrderView(View):
+class UserOrderView(LoginRequiredMixin, View):
     """用户中心-订单页"""
     def get(self, request):
+        # 用户页面顶端的欢迎信息：在用户登录后，应该显示用户名，而不再显示 登录 注册
+        # Django为每个请求都提供了一个request.user属性，并传递给模板页面
+        # 如果用户没有登录：request.user设置成AnonymousUser的一个实例
+        # 如果用户登录：request.user设置成User的一个实例
+        # 可以用request.user.is_authenticated()方法判断是否登录
         return render(request, 'user_center_order.html', {"page": 'order'})
 
+
 # /user/address
-class UserAddressView(View):
+class UserAddressView(LoginRequiredMixin, View):
     """用户中心-地址页"""
     def get(self, request):
         return render(request, 'user_center_site.html', {"page": 'address'})
