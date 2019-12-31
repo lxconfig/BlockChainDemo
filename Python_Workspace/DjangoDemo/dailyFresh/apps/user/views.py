@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from django.core.urlresolvers import reverse  # 反向解析
-from apps.user.models import User
+from apps.user.models import User, Address
 import re
 from django.views.generic import View         # 类视图需要继承的类
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer  # 加密用户的身份信息
@@ -211,4 +211,60 @@ class UserOrderView(LoginRequiredMixin, View):
 class UserAddressView(LoginRequiredMixin, View):
     """用户中心-地址页"""
     def get(self, request):
-        return render(request, 'user_center_site.html', {"page": 'address'})
+        user = request.user
+        # try:
+        #     address = Address.objects.get(user=user, is_default=True)
+        # except Address.DoesNotExist:
+        #     # 不存在默认收货地址
+        #     address = None
+
+        # 通过自定义模型管理器类对象来查询是否有默认地址
+        address = Address.objects.get_default_address(user)
+
+        # 获取所有地址
+        all_address = Address.objects.get_all_address(user)
+        return render(request, 'user_center_site.html', {"page": 'address', 'address': address, 'all_address': all_address})
+    
+    def post(self, request):
+        """用户增加收货地址"""
+        # 获取数据
+        receiver = request.POST.get('receiver')
+        addr = request.POST.get('addr')
+        zip_code = request.POST.get('zip_code')
+        phone = request.POST.get('phone')
+
+        # 检验数据
+        if not all([receiver, addr, phone]):
+            # 数据不完整
+            return render(request, 'user_center_site.html', {"errorMsg": '数据不完整!'})
+        
+        if not re.match(r'^1[3|4|5|7|8|9][0-9]{9}$', phone):
+            # 电话号码有误
+            return render(request, 'user_center_site.html', {"errorMsg": '电话号码有误!'})
+        
+        # 业务处理：添加地址
+        # 能进入这个地址说明已经登录过，那么就会有request.user属性，并且是一个User实例
+        user = request.user
+        # 根据user及is_default判断当前用户是否存在默认地址
+        # 如果不存在，则把此时用户输入的地址作为默认地址
+        # 如果存在，则只存储此时用户输入的地址
+
+        # try:
+        #     address = Address.objects.get(user=user, is_default=True)
+        # except Address.DoesNotExist:
+        #     # 不存在默认收货地址
+        #     address = None
+
+        # 通过自定义模型管理器类对象来查询是否有默认地址
+        address = Address.objects.get_default_address(user)
+        
+        if address:
+            is_default = False
+        else:
+            is_default = True
+        # 添加地址
+        Address.objects.create(user=user, receiver=receiver, addr=addr, zip_code=zip_code, phone=phone, is_default=is_default)
+
+        # 返回响应
+        # get请求
+        return redirect(reverse('user:user_address'))
