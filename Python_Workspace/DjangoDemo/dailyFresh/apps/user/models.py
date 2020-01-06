@@ -1,7 +1,7 @@
 '''
 @Author: lixuan
 @Date: 2019-12-19 15:06:15
-@LastEditTime : 2019-12-31 14:30:04
+@LastEditTime : 2020-01-03 10:01:09
 @Description: 用户模型
 '''
 from django.db import models

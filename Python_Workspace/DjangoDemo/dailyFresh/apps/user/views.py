@@ -14,6 +14,8 @@ from PIL import Image, ImageDraw, ImageFont                # 加入验证码
 from django.utils.six import BytesIO
 import random
 from utils.mixin import LoginRequiredMixin                 # mixin类,需要登录后才能访问的页面先继承此类
+from apps.goods.models import GoodsSKU
+from django_redis import get_redis_connection              # 用于链接redis，保存用户浏览记录信息
 
 # Create your views here.
 
@@ -191,8 +193,33 @@ class LogoutView(View):
 class UserInfoView(LoginRequiredMixin, View):
     """用户中心-信息页"""
     def get(self, request):
+        # 获取用户的信息
+        user = request.user
+        address = Address.objects.get_default_address(user)
+
+        # 最近浏览信息
+        # 链接上redis数据库，default就是在settings.py中对redis的设置
+        # get_redis_connection返回一个StrictRedis对象
+        con = get_redis_connection('default')
+
+        # 历史浏览记录用list保存在redis中
+        # 定义键
+        history_key = "history_%d" % user.id
+        # 获取最新浏览的5个商品信息的id
+        # 返回列表，包含商品的id
+        sku_ids = con.lrange(history_key, 0, 4)
+        # 从数据库中查询商品的具体信息
+        goods_li = []
+        for id in sku_ids:
+            goods = GoodsSKU.objects.get(id=id)
+            goods_li.append(goods)
+        context = {
+            "page": 'user',
+            "address": address,
+            "goods_li": goods_li,
+        }
         # 返回一个值判断哪个页面被选中了
-        return render(request, 'user_center_info.html', {"page": 'user'})
+        return render(request, 'user_center_info.html', context)
 
 
 # /user/order

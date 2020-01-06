@@ -163,5 +163,5 @@ CACHES = {
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "default"
 
-#  未登录时请求某个页面(需要登录才能显示)跳转到的页面
+# 未登录时请求某个页面(需要登录才能显示)跳转到的页面
 LOGIN_URL = '/user/login'
