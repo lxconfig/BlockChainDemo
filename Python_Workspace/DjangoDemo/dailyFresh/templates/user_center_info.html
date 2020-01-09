@@ -20,6 +20,7 @@
 					<ul class="goods_type_list clearfix">
 						{% for goods in goods_li %}
 				        <li>
+							{# 调用上传文件的url方法，返回该文件的url路径 #}
                             <a href="detail.html"><img src="{{ goods.image.url }}"></a>
 							<h4><a href="">{{ goods.name }}</a></h4>
                             <div class="operate">

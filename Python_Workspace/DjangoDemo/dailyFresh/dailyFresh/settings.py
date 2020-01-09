@@ -165,3 +165,12 @@ SESSION_CACHE_ALIAS = "default"
 
 # 未登录时请求某个页面(需要登录才能显示)跳转到的页面
 LOGIN_URL = '/user/login'
+
+# 设置Django调用的文件存储类
+DEFAULT_FILE_STORAGE = 'utils.fdfs.storage.FdfsStorage'
+
+# 设置FastDFS使用的client.conf文件路径
+FDFS_CLIENT_CONF_PATH = './utils/fdfs/client.conf'
+
+# 设置FastDFS存储服务器上的Nginx的ip和端口号
+FDFS_NGINX_URL = 'http://127.0.0.1:8888/'
