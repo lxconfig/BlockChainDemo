@@ -1,7 +1,7 @@
 '''
 @Author: lixuan
 @Date: 2019-12-19 15:56:33
-@LastEditTime : 2019-12-19 15:58:13
+@LastEditTime : 2020-01-14 14:53:38
 @Description: 订单模型
 '''
 from django.db import models
