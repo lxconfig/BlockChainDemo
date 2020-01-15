@@ -1,0 +1,64 @@
+{% extends "base_detail_list.html" %}
+{% block title %}天天生鲜-商品列表{% endblock title %}
+{% block main_content %}
+	<div class="breadcrumb">
+		<a href="#">全部分类</a>
+		<span>></span>
+		<a href="#">{{ type.name }}</a>
+	</div>
+
+	<div class="main_wrap clearfix">
+		<div class="l_wrap fl clearfix">
+			<div class="new_goods">
+				<h3>新品推荐</h3>
+				<ul>
+					{% for new_goods in new_goods_info %}
+					<li>
+						<a href="{% url 'goods:detail' new_goods.id %}"><img src="{{ new_goods.image.url }}"></a>
+						<h4><a href="{% url 'goods:detail' new_goods.id %}">{{ new_goods.name }}</a></h4>
+						<div class="prize">￥{{ new_goods.price }}</div>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+
+		<div class="r_wrap fr clearfix">
+			<div class="sort_bar">
+				<a href="{% url 'goods:list' type.id 1 %}" {% if sorted == 'default' %}class="active"{% endif %}>默认</a>
+				<a href="{% url 'goods:list' type.id 1 %}?sorted=price" {% if sorted == 'price' %}class="active"{% endif %}>价格</a>
+				<a href="{% url 'goods:list' type.id 1 %}?sorted=hot" {% if sorted == 'hot' %}class="active"{% endif %}>人气</a>
+			</div>
+
+			<ul class="goods_type_list clearfix">
+				{% for goods_info in goods_info_page %}
+				<li>
+					<a href="{% url 'goods:detail' goods_info.id %}"><img src="{{ goods_info.image.url }}"></a>
+					<h4><a href="{% url 'goods:detail' goods_info.id %}">{{ goods_info.name }}</a></h4>
+					<div class="operate">
+						<span class="prize">￥{{ goods_info.price }}</span>
+						<span class="unit">{{ goods_info.price }}/{{ goods_info.uinte }}</span>
+						<a href="#" class="add_goods" title="加入购物车"></a>
+					</div>
+				</li>
+				{% endfor %}
+			</ul>
+
+			<div class="pagenation">
+				{% if goods_info_page.has_previous %}
+					<a href="{% url 'goods:list' type.id goods_info_page.previous_page_number %}?sorted={{ sorted }}"><上一页</a>
+				{% endif %}
+				{% for index in goods_info_page.paginator.page_range %}
+					{% if index == goods_info_page.number %}
+						<a href="{% url 'goods:list' type.id index %}?sorted={{ sorted }}" class="active">{{ index }}</a>
+					{% else %}
+						<a href="{% url 'goods:list' type.id index %}?sorted={{ sorted }}">{{ index }}</a>
+					{% endif %}
+				{% endfor %}
+				{% if goods_info_page.has_next %}
+					<a href="{% url 'goods:list' type.id goods_info_page.next_page_number %}?sorted={{ sorted }}">下一页></a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+{% endblock main_content %}

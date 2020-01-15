@@ -5,6 +5,7 @@ from apps.goods.models import GoodsType,GoodsSKU,Goods,IndexGoodsBanner,IndexPro
 from django_redis import get_redis_connection
 from django.core.cache import cache   # 设置django缓存
 from apps.order.models import OrderGoods
+from django.core.paginator import Paginator  # 分页
 
 # Create your views here.
 
@@ -97,8 +98,8 @@ class DetailView(View):
         # 获取新品推荐信息,按创建时间降序排列
         new_goods_info = GoodsSKU.objects.filter(type=goods_info.type).order_by("-create_time")[:2]
 
-        # 获取商品详情信息
-        goods_detail = Goods.objects.get(name=goods_info.name)
+        # 获取同一个SPU的其他规格商品
+        same_spu_goods = GoodsSKU.objects.filter(goods=goods_info.goods).exclude(id=goods_id)
 
         # 获取商品评论信息
         goods_comment = OrderGoods.objects.filter(sku=goods_info).exclude(comment="")
@@ -108,9 +109,74 @@ class DetailView(View):
             "types": types,
             "goods_info": goods_info,
             "new_goods_info": new_goods_info,
-            "goods_detail": goods_detail,
+            "same_spu_goods":same_spu_goods,
             "goods_comment": goods_comment,
         }
 
         # 返回响应
         return render(request, "detail.html", context)
+
+
+# /list/type_id/page?sorted=default|price|sales
+class ListView(View):
+    """商品列表页类视图"""
+    def get(self, request, type_id, page):
+        # 先判断type_id是否存在
+        try:
+            type = GoodsType.objects.get(id=type_id)
+        except GoodsType.DoesNotExist:
+            # 不存在则返回首页
+            return redirect(reverse("goods:index"))
+        
+        # 获取商品分类信息
+        types = GoodsType.objects.all()
+
+        # 获取排序方式
+        sorted = request.GET.get("sorted")
+        # 根据排序方式查找相应种类的商品数据
+        if sorted == "price":
+            # 按价格排序
+            goods_info = GoodsSKU.objects.filter(type=type).order_by('price')
+        elif sorted == "hot":
+            # 按人气排序
+            goods_info = GoodsSKU.objects.filter(type=type).order_by('-sales')
+        else:
+            # 默认按id排序
+            sorted = 'default'
+            goods_info = GoodsSKU.objects.filter(type=type).order_by('-id')
+        
+        # 分页显示内容(要分页的内容，每页数据量)
+        paginator = Paginator(goods_info, 1)
+        try:
+            page = int(page)
+        except Exception as e:
+            page = 1
+        if page > paginator.num_pages or page <= 0:
+            page = 1
+        
+        # 获取第page页的数据
+        goods_info_page = paginator.page(page)
+
+        # 获取新品推荐信息,按创建时间降序排列
+        new_goods_info = GoodsSKU.objects.filter(type=type).order_by("-create_time")[:2]
+        
+        # 获取用户购物车信息
+        user = request.user
+        cart_count = 0
+        if user.is_authenticated():
+            conn = get_redis_connection("default")
+            cart_key = "cart_%d" % user.id
+            cart_count = conn.hlen(cart_key)
+        
+        # 组织上下文
+        context = {
+            "type": type,
+            "types": types,
+            "goods_info_page": goods_info_page,
+            "new_goods_info": new_goods_info,
+            "cart_count": cart_count,
+            "sorted": sorted,
+        }
+
+        # 返回响应
+        return render(request, "list.html", context)

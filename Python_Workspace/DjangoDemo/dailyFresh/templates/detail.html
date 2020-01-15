@@ -27,6 +27,13 @@
 					<a href="javascript:;" class="minus fr">-</a>	
 				</div> 
 			</div>
+			<div>
+				<ul>
+					{% for same_goods in same_spu_goods %}
+						<li><a href="{% url 'goods:detail' same_goods.id %}">{{ same_goods.name }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
 			<div class="total">总价：<em>16.80元</em></div>
 			<div class="operate_btn">
 				<a href="javascript:;" class="buy_btn">立即购买</a>
@@ -62,7 +69,7 @@
 					<dt>商品详情：</dt>
 					{# 商品详情在数据库中是以富文本形式保存，读取时需要进行HTML转义 #}
 					{# {% autoescape on/off %} {% endautoescape %}#}
-					<dd>{{ goods_detail.detail|safe}}</dd>
+					<dd>{{ goods_info.goods.detail|safe}}</dd>
 				</dl>
 			</div>
 			<div class="tab_content">
@@ -81,7 +88,7 @@
 	<div class="add_jump"></div>
 {% endblock bottom %}
 {% block bottomfiles %}
-	<script type="text/javascript" src="js/jquery-1.12.2.js"></script>
+	<script type="text/javascript" src="/static/js/jquery.min.js"></script>
 	<script type="text/javascript">
 		var $add_x = $('#add_cart').offset().top;
 		var $add_y = $('#add_cart').offset().left;
