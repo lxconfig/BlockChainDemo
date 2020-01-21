@@ -111,11 +111,11 @@ class DetailView(View):
             "new_goods_info": new_goods_info,
             "same_spu_goods":same_spu_goods,
             "goods_comment": goods_comment,
+            "cart_count":cart_count,
         }
 
         # 返回响应
         return render(request, "detail.html", context)
-
 
 # /list/type_id/page?sorted=default|price|sales
 class ListView(View):
@@ -157,6 +157,22 @@ class ListView(View):
         # 获取第page页的数据
         goods_info_page = paginator.page(page)
 
+        # 进行页码控制，最多显示5个页码(page-2 page-1 page page+1 page+2)
+        # 1. 如果总页数不足5页，则显示全部页码
+        # 2. 如果当前页是前3页，则显示1-5页
+        # 3. 如果当前页是后3页，则显示后5页(如总页数6页，当前页是第4页，页码显示为:2 3 4 5 6)
+        # 4. 其他情况显示当前页的前2页，当前页，当前页的后2页
+        num_pages = paginator.num_pages
+        if num_pages < 5:
+            pages = range(1, num_pages+1)
+        elif page <= 3:
+            pages = range(1, 6)
+        elif num_pages - page <= 2:
+            pages = range(num_pages-4, num_pages+1)
+        else:
+            pages = range(page-2, page+3)
+
+
         # 获取新品推荐信息,按创建时间降序排列
         new_goods_info = GoodsSKU.objects.filter(type=type).order_by("-create_time")[:2]
         
@@ -175,6 +191,7 @@ class ListView(View):
             "goods_info_page": goods_info_page,
             "new_goods_info": new_goods_info,
             "cart_count": cart_count,
+            "pages": pages,
             "sorted": sorted,
         }
 

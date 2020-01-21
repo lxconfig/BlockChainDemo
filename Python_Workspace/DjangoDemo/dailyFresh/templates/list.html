@@ -48,7 +48,7 @@
 				{% if goods_info_page.has_previous %}
 					<a href="{% url 'goods:list' type.id goods_info_page.previous_page_number %}?sorted={{ sorted }}"><上一页</a>
 				{% endif %}
-				{% for index in goods_info_page.paginator.page_range %}
+				{% for index in pages %}
 					{% if index == goods_info_page.number %}
 						<a href="{% url 'goods:list' type.id index %}?sorted={{ sorted }}" class="active">{{ index }}</a>
 					{% else %}
