@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        <!-- csrf验证 -->
+        {{ form.csrf_token }}
+        <!-- 字段名 -->
+        {{ form.username.label }}
+        <!-- input标签 -->
+        <p>{{ form.username }}</p>
+        <!-- 错误提示信息 -->
+        {% for msg in form.username.errors %}
+            {{ msg }}
+        {% endfor %}
+
+        <!-- 字段名 -->
+        {{ form.password.label }}
+        <!-- input标签 -->
+        <p>{{ form.password }}</p>
+        <!-- 错误提示信息 -->
+        {% for msg in form.password.errors %}
+            {{ msg }}
+        {% endfor %}
+
+        <!-- 字段名 -->
+        {{ form.password2.label }}
+        <!-- input标签 -->
+        <p>{{ form.password2 }}</p>
+        <!-- 错误提示信息 -->
+        {% for msg in form.password2.errors %}
+            {{ msg }}
+        {% endfor %}
+
+        <!-- 提交 -->
+        <!-- 或者 {{ form.submit() }} -->
+        {{ form.submit }}
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>name = {{ name }}</p>
+    <p>gender = {{ gender }}</p>
+    <p>age = {{ age }}</p>
+    <p>dict['city'] = {{ dict['city'] }}</p>
+    <p>dict.city = {{ dict.city }}</p>
+    <p>list = {{ list }}</p>
+    <p>list[0] + list[1] = {{ list[0] + list[1] }}</p>
+    <p>{{ 'hello' + ' flask' }}</p>
+
+    <!-- 过滤器 -->
+    <p>过滤器</p>
+    <p>capitalize: {{ 'hello' | capitalize }}</p>
+    <p>lower: {{ 'hello' | lower }}</p>
+    <p>upper: {{ 'hello' | upper }}</p>
+    <p>title: {{ 'hello' | title }}</p>
+    <p>trim: a{{ '   hello  ' | trim }}a</p>
+    <p>reverse: {{ 'hello' | reverse }}</p>
+    <p>链式操作: {{ 'hello' | reverse | upper}}</p>
+
+    <!-- 自定义过滤器 -->
+    <p>自定义过滤器</p>
+    <p>list[::2] = {{ list | li2 }}</p>
+    <p>list[::3] = {{ list | li3 }}</p>
+</body>
+</html>

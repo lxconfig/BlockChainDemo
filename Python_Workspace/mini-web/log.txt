@@ -1,0 +1,5 @@
+2020-02-29 14:50:21,668 - 12-log.py[line:11] - INFO: 这是 logging info message
+2020-02-29 14:50:21,668 - 12-log.py[line:12] - DEBUG: 这是 logging debug message
+2020-02-29 14:50:21,668 - 12-log.py[line:13] - WARNING: 这是 logging warning message
+2020-02-29 14:50:21,668 - 12-log.py[line:14] - ERROR: 这是 logging error message
+2020-02-29 14:50:21,668 - 12-log.py[line:15] - CRITICAL: 这是 logging critical message

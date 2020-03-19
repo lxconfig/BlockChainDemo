@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    宏的使用：类似于函数
+    1. 无参数的宏
+    {% macro input() %}
+        <input type="text", value="", size="30">
+    {% endmacro %}
+    {{ input() }}
+    <br>
+
+    2. 有参数的宏
+    {% macro input2(type, value, size) %}
+        <input type="{{type}}", value="{{value}}", size="{{size}}">
+    {% endmacro %}
+    {{ input2("radio", "", 40) }}
+    <br>
+
+    3. 有默认值的宏
+    {% macro input3(type='password', value='password', size=80) %}
+        <input type="{{type}}", value="{{value}}", size="{{size}}">
+    {% endmacro %}
+    {{ input3() }}
+    <br>
+    
+    4. 从文件中引入宏
+    {% import 'macro_input.html' as func %}
+    {{ func.input3() }}
+
+</body>
+</html>
