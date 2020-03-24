@@ -11,11 +11,13 @@ class Myclass:
     
     def __str__(self):
         # print(实例对象)，可以输出内容
+        # 面向用户显示的
+        # __str__ 和 __repr__方法同时存在时，优先调用__str__方法
         return "__str__ called"
     
     def __repr__(self):
         # 直接输入实例对象，可以输出内容
-        # 在IDE中好像无效
+        # 面向程序员显示的
         return "__repr__ called"
     
     # 实现这两个方法可以创建一个上下文管理器
