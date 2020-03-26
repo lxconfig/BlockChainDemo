@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        {{ form.csrf_token }}
+        <p>{{ form.author_name.label }}</p>
+        {{ form.author_name }}
+        {% for msg in form.author_name.errors %}
+            <p>{{ msg }}</p>
+        {% endfor %}
+
+        <p>{{ form.book_name.label }}</p>
+        {{ form.book_name }}
+        {% for msg in form.book_name.errors %}
+            <p>{{ msg }}</p>
+        {% endfor %}
+
+        <p>{{ form.submit }}</p>
+    </form>
+    <hr>
+    <ul>
+        {% for author in authors %}
+        <li>作者: {{ author.name }}</li>
+        <ul>
+            {% for book in author.books %}
+                <li>书籍: {{ book.name }}</li>
+                <!-- <a href="javascript:;" id="{{ book.id }}">删除</a> -->
+                <a href="/delete_book/{{ book.id }}">删除</a>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </ul>
+    <!-- <ul>
+            {% for book in books %}
+            <li>作者: {{ book.author.name }}</li>
+            <ul>
+                <li>书籍: {{ book.name }}</li>
+            </ul>
+            {% endfor %}
+        </ul> -->
+</body>
+<!-- <script src="/static/js/jquery.min.js"></script>
+<script>
+    $(function() {
+        $("a").click(function () {
+            var data = {
+                book_id: $(this).attr("id")
+            };
+            var req_json = JSON.stringify(data);
+            $.ajax({
+                url: "/delete_book",  // 请求的后端地址
+                method: "post",       // 请求方式，也可以用type
+                data: req_json,       // 向后端发送的请求体数据
+                contentType: "application/json",  // 指明向后端发送的数据格式
+                dataType: "json",     // 指明后端返回的数据格式
+                success: function (resp) {  // resp是后端返回的数据
+                    if (resp.code == 0) {
+                        console.log(resp);
+                        location.href = "/"
+                    }
+                }    
+            })
+        })
+    })
+</script> -->
+</html>
